@@ -1,0 +1,4 @@
+<p>This is Parent component</p><br>
+Enter your name:<input type="text" [(ngModel)]="name">
+{{message}}
+<app-child (outputevent)="message=$event" [ParentData]="name"></app-child>
